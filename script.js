@@ -1,4 +1,4 @@
-const pages = ["homePage", "aboutPage"]
+const pages = ["homePage", "skillPage", "portfolioPage", "blogPage", "contactPage"]
 
 function changePageTo(idPage) {
     for (let i = 0; i < pages.length; i++) {

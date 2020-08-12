@@ -14,14 +14,17 @@
         <nav>
             <ul class="nav__links">
                 <li><a onclick="changePageTo('homePage')">Home</a></li>
-                <li><a onclick="changePageTo('aboutPage')">About</a></li>
+                <li><a onclick="changePageTo('skillPage')">Skill</a></li>
+                <li><a onclick="changePageTo('portfolioPage')">Portfolio</a></li>
+                <li><a onclick="changePageTo('blogPage')">Blog</a></li>
+                <li><a onclick="changePageTo('contactPage')">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <div class="hide-page" id="homePage">
-        <!--profile-->
-        <section class="profile" id=about>
+        <!--banner-->
+        <section class="banner">
                 <div class="center">
                     <div class="avatar">
                         <img src="images/fajar.jpg" alt="face">
@@ -38,13 +41,22 @@
                         <a href="https://www.facebook.com/fajarshq/" target="_blank"><i class="fa fa-facebook"></i></a>
                     </div>
                     <div class="about">
-                        <button class="button" onclick="changePageTo('aboutPage')">More About Me</button>
+                        <button class="button" onclick="changePageTo('skillPage')">Skill</button>
+                        <button class="button" onclick="changePageTo('portfolioPage')">Portfolio</button>
+                        <button class="button" onclick="changePageTo('blogPage')">Blog</button>
+                        <button class="button" onclick="changePageTo('contactPage')">Contact</button>
                     </div>
                 </div>
         </section>
         </div>
-        <!--end of profile-->
-        <div class="hide-page" id="aboutPage">
+        <div class="hide-page" id="skillPage">
+            <section class="banner" id=about>
+                <div class="center">
+                    <div class="content">
+                        <h1>My Skill</h1>
+                    </div>
+                </div>
+            </section>
         <!--services-->
         <section class=services id=service>
             <div class=title>
@@ -109,6 +121,15 @@
             </div>
         </section>
         <!--end skill-->
+        </div>
+        <div class="hide-page" id="portfolioPage">
+            <section class="banner" id=about>
+                <div class="center">
+                    <div class="content">
+                        <h1>Portfolio</h1>
+                    </div>
+                </div>
+            </section>
         <!--project-->
         <section class=project id=project>
             <div class=title>
@@ -141,6 +162,79 @@
             <iframe width="560" height="315" src="https://www.youtube.com/embed/6pQut50KMgI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <!--end project-->
+        </div>
+        <div class="hide-page" id="blogPage">
+            <section class="banner" id=about>
+                <div class="center">
+                    <div class="content">
+                        <h1>Blog</h1>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="blog">
+                    <div class=content>
+                        <div class="container">
+                            <div class="box">
+                                <h2>01</h2>
+                                <h3>Manganalisa Performa Marketing Anda</h3>
+                                <img width="200px" src="images/blog-1.jpg" alt="blog1">
+                                <p>Read More..</p>
+                            </div>
+                            <div class="box">
+                                <h2>02</h2>
+                                <h3>Tentang Google Ads</h3>
+                                <img width="200px" src="images/blog-2.png" alt="blog2">
+                                <p>Read More..</p>
+                            </div>
+                            <div class="box">
+                                <h2>03</h2>
+                                <h3>Tentang Facebook Ads</h3>
+                                <img width="200px" src="images/blog-3.png" alt="blog3">
+                                <p>Read More..</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog">
+                    <div class=content>
+                        <div class="container">
+                            <div class="box">
+                                <h2>04</h2>
+                                <h3>Tentang Tag Manager</h3>
+                                <img width="200px" src="images/blog-4.png" alt="blog4">
+                                <p>Read More..</p>
+                            </div>
+                            <div class="box">
+                                <h2>05</h2>
+                                <h3>Tentang Google Analytics</h3>
+                                <img width="200px" src="images/blog-5.jpg" alt="blog5">
+                                <p>Read More..</p>
+                            </div>
+                            <div class="box">
+                                <h2>06</h2>
+                                <h3>Digital Marketing?</h3>
+                                <img width="200px" src="images/blog-6.jpg" alt="blog6">
+                                <p>Read More..</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="hide-page" id="contactPage">
+        <section class="banner" id=about>
+            <div class="center">
+                <div class="content">
+                    <h1>Contact</h1>
+                </div>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/fajarhq/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/fajarhq/" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/fajarshq/" target="_blank"><i class="fa fa-facebook"></i></a>
+                </div>
+            </div>
+        </section>
         <!--contact-->
         <section class="contact" id="contact">
             <h1>Contact Us</h1>
@@ -154,7 +248,7 @@
             </form>
         </section>
         <!--end contact-->
-    </div>
+        </div>
     </main>
 </body>
 <footer>
