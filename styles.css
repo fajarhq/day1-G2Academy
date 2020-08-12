@@ -81,7 +81,7 @@ a {
 .profile .center {
   width: 55%;
   background-color: rgba(1, 21, 34, 0.685);
-  height: 60vh;
+  height: auto;
   text-align: center;
   border-radius: 5px;
 }
