@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="script.js" defer></script>
+    <title>Fajar Syifaul Haq | G2 Bootcamp - Day 1 Task 2</title>
+</head>
+<body>
+    <header>
+        <div class=admin-bar>
+          <a href="admin.html">Admin Page</a>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="images/fajarhq-logo-wide.png" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+              </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a onclick="changePageTo('careerPage')" class="nav-link" href="#">Career <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a onclick="changePageTo('joinPage')" class="nav-link" href="#">Join Us</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+    </header>
+    <main>
+      <div class="hide-page" id="careerPage">
+        <div class="jumbotron text-center">
+          <h1>Start Your Journey With Us</h1>
+          <p>Join our super team to help people build their success online</p> 
+              <div class="input-group-btn">
+                <button type="button" class="btn btn-warning">View Available Position</button>
+              </div>
+        </div>
+          <div class="container who-we-are">
+            <h1>Who We Are</h1>
+            <p>Our vision is to help thousands of business owners build their online presence with high performing digital marketing. As we grow as the biggest marketing agency company in Indonesia, we need more talented people, like you, to empower our clients.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zdh4qt3AYVs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="container team">
+            <h1>Meet Our Team</h1>
+            <div class="row row-cols-1 row-cols-md-3">
+              <div class="col mb-4">
+                <div class="card h-100">
+                  <img src="images/0b7f4e9b-f59c-4024-9f06-b3dc12850ab7-1920-1080.jpg" class="card-img-top" alt="person">
+                    <div class="card-body">
+                      <h5 class="card-title">Jhon Doe</h5>
+                      <p class="card-text">fajarhq.com gives me a lot of chances to learn new skills. The company trusts us to try new, unique ideas, as long as we can deliver the best results. Most importantly, I have the opportunity to work with colleagues who share the same vision: helping people to succeed online.</p>
+                    </div>
+                </div>
+              </div>
+              <div class="col mb-4">
+                <div class="card h-100">
+                  <img src="images/0b7f4e9b-f59c-4024-9f06-b3dc12850ab7-1920-1080.jpg" class="card-img-top" alt="person">
+                  <div class="card-body">
+                    <h5 class="card-title">Jhon Doe</h5>
+                    <p class="card-text">fajarhq.com gives me a lot of chances to learn new skills. The company trusts us to try new, unique ideas, as long as we can deliver the best results. Most importantly, I have the opportunity to work with colleagues who share the same vision: helping people to succeed online.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col mb-4">
+                <div class="card h-100">
+                  <img src="images/0b7f4e9b-f59c-4024-9f06-b3dc12850ab7-1920-1080.jpg" class="card-img-top" alt="person">
+                    <div class="card-body">
+                      <h5 class="card-title">Jhon Doe</h5>
+                      <p class="card-text">fajarhq.com gives me a lot of chances to learn new skills. The company trusts us to try new, unique ideas, as long as we can deliver the best results. Most importantly, I have the opportunity to work with colleagues who share the same vision: helping people to succeed online.</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container position" id="position">
+            <h1>Available Positions for You</h1>
+            <h6>It’s your time to start your journey. It’s your chance to help people to unlock the power of the internet with us.</h6>
+            <ul class="job">
+              <li>Web Developer</li>
+              <li>SEO Specialist</li>
+              <li>Google Ads Specialist</li>
+              <li>Facebook Ads Specialist</li>
+            </ul>
+          </div>
+          <div class="join">
+            <div class="container">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-8"><h1>Let’s Grow Your Professional Career With Us!</h1></div>
+                  <div class="col-sm-4"><button onclick="changePageTo('joinPage')" type="button" class="btn btn-warning">Apply Now</button></div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="hide-page" id="joinPage">
+        <div class="jumbotron text-center">
+          <h1>Start Your Journey With Us</h1>
+          <p>Join our super team to help people build their success online</p> 
+        </div>
+        <div class="container apply" id="apply">
+          <h1>Apply Now</h1>
+          <div class="border"></div>
+          <form class="apply-form" action="index.html" method="post">
+          <input type="text" class="apply-form-text" placeholder="Your name">
+          <input type="email" class="apply-form-text" placeholder="Your email">
+          <input type="text" class="apply-form-text" placeholder="Your phone">
+          Upload your resume
+          <input type="file" id="myFile" name="filename">
+          <input type="submit" class="apply-form-btn" value="Send">
+          </form>
+        </div>
+      </div>
+    </main>
+</body>
+<footer>
+    <p>Posted by: fajarhq</p>
+    <p>apply information: <a href="mailto:saya@fajarhq.com" target="_blank">
+    saya@fajarhq.com</a>.</p>
+  </footer>
+</html>

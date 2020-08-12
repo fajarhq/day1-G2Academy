@@ -1,0 +1,110 @@
+.admin-bar {
+  background: black;
+}
+.jumbotron {
+  background: linear-gradient(39.41deg,#00349b -38.24%,rgba(0,92,255,.921875) 34.47%,#007aff 104.22%),url("images/pexels-canva-studio-3153198.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  color: #fff;
+  padding: 100px 25px;
+  line-height: 4em;
+}
+
+.h1 {
+  font-weight: bold;
+  line-height: 4em;
+}
+
+.btn-warning {
+  color: white !important;
+  font-weight: bold !important;
+}
+
+.who-we-are {
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  line-height: 2em;
+}
+
+.team {
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+ul.job {
+  list-style-type: circle;
+}
+
+.join {
+  background: linear-gradient(39.41deg,#00349b -38.24%,rgba(0,92,255,.921875) 34.47%,#007aff 104.22%),url("images/pexels-canva-studio-3153198.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  color: #fff;
+  padding: 100px 25px;
+  line-height: 4em;
+}
+
+.hide-page {
+  display: none;
+}
+
+.apply{
+  background-color: white;
+  background-size: cover;
+  padding: 40px 0;
+}
+.apply h1{
+  text-align: center;
+  color: #081132;
+}
+
+.apply-form{
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.apply-form-text{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #111;
+  padding: 20px 40px;
+  outline: none;
+  color: #ddd;
+  transition: 0.5s;
+}
+.apply-form-text:focus{
+  box-shadow: 0 0 10px 4px #34495e;
+}
+textarea.apply-form-text{
+  resize: none;
+  height: 120px;
+}
+.apply-form-btn{
+  float: right;
+  border: 0;
+  background: #34495e;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.apply-form-btn:hover{
+  background: #2980b9;
+}
+
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 10px;
+}

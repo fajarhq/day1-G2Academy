@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href=admin-styles.css>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <script type="text/javascript" src="admin-script.js" defer></script>
+    <title>Fajar Syifaul Haq | G2 Bootcamp - Day 1 Task 2</title>
+</head>
+<body>
+    <div class=admin-bar>
+        <a href="index.html">Front Page</a>
+    </div>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>fajarhq.com</h3>
+                <strong>HQ</strong>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a onclick="changePageTo('dashboardPage')" href="#">
+                        <i class="fas fa-tachometer-alt"></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a onclick="changePageTo('divisiPage')" href="#">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        Daftar Divisi
+                    </a>
+                </li>
+                <li>
+                    <a onclick="changePageTo('pelamarPage')" href="#">
+                        <i class="fas fa-user"></i>
+                        Daftar Pelamar
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <form class="form-inline my-2 my-lg-0 mr-4">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+                            </form>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-envelope"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-sign-out-alt"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="isi">
+                <div class="hide-page" id="dashboardPage">
+                    <div class="row mt-5">
+                        <div class="col-sm">
+                            <div class="class-box">
+                                <div class="bg-success">
+                                <i class="fas fa-chalkboard-teacher big-right-icon"></i>
+                                </div>
+                                <div class="box-content">
+                                <h3 class="title-bg text-outline">Daftar Divisi</h3>
+                                <p></p>
+                                <h2 class="title-bg text-outline font-weight-bold">5</h2>
+                                <h6 class="title-bg text-outline">Lihat detail >></h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="class-box">
+                                <div class="bg-danger">
+                                <i class="fas fa-chalkboard-teacher big-right-icon"></i>
+                                </div>
+                                <div class="box-content">
+                                <h3 class="title-bg text-outline">Daftar Pelamar</h3>
+                                <p></p>
+                                <h2 class="title-bg text-outline font-weight-bold">400</h2>
+                                <h6 class="title-bg text-outline">Lihat detail >></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hide-page" id="divisiPage">
+                    <h1>Daftar Divisi</h1>
+                    <table cellspacing="0" border="0">
+                        <colgroup width="28"></colgroup>
+                        <colgroup width="160"></colgroup>
+                        <colgroup width="130"></colgroup>
+                        <colgroup width="108"></colgroup>
+                        <tr>
+                            <td height="17" align="left">No</td>
+                            <td align="left">Divisi</td>
+                            <td align="left">Kebutuhan Pegawai</td>
+                            <td align="left">Jumlah Pelamar</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="1" sdnum="1033;">1</td>
+                            <td align="left">SEO Specialist</td>
+                            <td align="right" sdval="2" sdnum="1033;">2</td>
+                            <td align="right" sdval="100" sdnum="1033;">100</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="2" sdnum="1033;">2</td>
+                            <td align="left">Facebook Ads Specialist</td>
+                            <td align="right" sdval="3" sdnum="1033;">3</td>
+                            <td align="right" sdval="150" sdnum="1033;">150</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="3" sdnum="1033;">3</td>
+                            <td align="left">Google Ads Specialist</td>
+                            <td align="right" sdval="2" sdnum="1033;">2</td>
+                            <td align="right" sdval="50" sdnum="1033;">50</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="4" sdnum="1033;">4</td>
+                            <td align="left">Data Analyst</td>
+                            <td align="right" sdval="1" sdnum="1033;">1</td>
+                            <td align="right" sdval="20" sdnum="1033;">20</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="5" sdnum="1033;">5</td>
+                            <td align="left">Web Developer</td>
+                            <td align="right" sdval="3" sdnum="1033;">3</td>
+                            <td align="right" sdval="180" sdnum="1033;">180</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="hide-page" id="pelamarPage">
+                    <h1>Daftar Pelamar</h1>
+                    <table cellspacing="0" border="0">
+                        <colgroup width="28"></colgroup>
+                        <colgroup width="80"></colgroup>
+                        <colgroup width="122"></colgroup>
+                        <colgroup width="131"></colgroup>
+                        <colgroup width="160"></colgroup>
+                        <colgroup width="69"></colgroup>
+                        <tr>
+                            <td height="17" align="left">No</td>
+                            <td align="left">Nama</td>
+                            <td align="left">Nomor Handphone</td>
+                            <td align="left">Email</td>
+                            <td align="left">Divisi Dipilih</td>
+                            <td align="left">Resume</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="1" sdnum="1033;">1</td>
+                            <td align="left">Pelamar 1</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">SEO Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="2" sdnum="1033;">2</td>
+                            <td align="left">Pelamar 2</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Facebook Ads Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="3" sdnum="1033;">3</td>
+                            <td align="left">Pelamar 3</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Google Ads Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="4" sdnum="1033;">4</td>
+                            <td align="left">Pelamar 4</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Data Analyst</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="5" sdnum="1033;">5</td>
+                            <td align="left">Pelamar 5</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Web Developer</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="6" sdnum="1033;">6</td>
+                            <td align="left">Pelamar 6</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">SEO Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="7" sdnum="1033;">7</td>
+                            <td align="left">Pelamar 7</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Facebook Ads Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="8" sdnum="1033;">8</td>
+                            <td align="left">Pelamar 8</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Google Ads Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="9" sdnum="1033;">9</td>
+                            <td align="left">Pelamar 9</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Data Analyst</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="10" sdnum="1033;">10</td>
+                            <td align="left">Pelamar 10</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Web Developer</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="11" sdnum="1033;">11</td>
+                            <td align="left">Pelamar 11</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">SEO Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="12" sdnum="1033;">12</td>
+                            <td align="left">Pelamar 12</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Facebook Ads Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="13" sdnum="1033;">13</td>
+                            <td align="left">Pelamar 13</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Google Ads Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="14" sdnum="1033;">14</td>
+                            <td align="left">Pelamar 14</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Data Analyst</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="15" sdnum="1033;">15</td>
+                            <td align="left">Pelamar 15</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Web Developer</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="16" sdnum="1033;">16</td>
+                            <td align="left">Pelamar 16</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">SEO Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="17" sdnum="1033;">17</td>
+                            <td align="left">Pelamar 17</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Facebook Ads Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="18" sdnum="1033;">18</td>
+                            <td align="left">Pelamar 18</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Google Ads Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="19" sdnum="1033;">19</td>
+                            <td align="left">Pelamar 19</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Data Analyst</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="20" sdnum="1033;">20</td>
+                            <td align="left">Pelamar 20</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Web Developer</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="21" sdnum="1033;">21</td>
+                            <td align="left">Pelamar 21</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">SEO Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="22" sdnum="1033;">22</td>
+                            <td align="left">Pelamar 22</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Facebook Ads Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="23" sdnum="1033;">23</td>
+                            <td align="left">Pelamar 23</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Google Ads Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="24" sdnum="1033;">24</td>
+                            <td align="left">Pelamar 24</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Data Analyst</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="25" sdnum="1033;">25</td>
+                            <td align="left">Pelamar 25</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Web Developer</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="26" sdnum="1033;">26</td>
+                            <td align="left">Pelamar 26</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">SEO Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="27" sdnum="1033;">27</td>
+                            <td align="left">Pelamar 27</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Facebook Ads Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="28" sdnum="1033;">28</td>
+                            <td align="left">Pelamar 28</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Google Ads Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="29" sdnum="1033;">29</td>
+                            <td align="left">Pelamar 29</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Data Analyst</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="30" sdnum="1033;">30</td>
+                            <td align="left">Pelamar 30</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Web Developer</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="31" sdnum="1033;">31</td>
+                            <td align="left">Pelamar 31</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">SEO Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="32" sdnum="1033;">32</td>
+                            <td align="left">Pelamar 32</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Facebook Ads Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="33" sdnum="1033;">33</td>
+                            <td align="left">Pelamar 33</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Google Ads Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="34" sdnum="1033;">34</td>
+                            <td align="left">Pelamar 34</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Data Analyst</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="35" sdnum="1033;">35</td>
+                            <td align="left">Pelamar 35</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Web Developer</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="36" sdnum="1033;">36</td>
+                            <td align="left">Pelamar 36</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">SEO Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="37" sdnum="1033;">37</td>
+                            <td align="left">Pelamar 37</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Facebook Ads Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="38" sdnum="1033;">38</td>
+                            <td align="left">Pelamar 38</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Google Ads Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="39" sdnum="1033;">39</td>
+                            <td align="left">Pelamar 39</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Data Analyst</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="40" sdnum="1033;">40</td>
+                            <td align="left">Pelamar 40</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Web Developer</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="41" sdnum="1033;">41</td>
+                            <td align="left">Pelamar 41</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">SEO Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="42" sdnum="1033;">42</td>
+                            <td align="left">Pelamar 42</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Facebook Ads Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="43" sdnum="1033;">43</td>
+                            <td align="left">Pelamar 43</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Google Ads Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="44" sdnum="1033;">44</td>
+                            <td align="left">Pelamar 44</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Data Analyst</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="45" sdnum="1033;">45</td>
+                            <td align="left">Pelamar 45</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Web Developer</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="46" sdnum="1033;">46</td>
+                            <td align="left">Pelamar 46</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">SEO Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="47" sdnum="1033;">47</td>
+                            <td align="left">Pelamar 47</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Facebook Ads Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="48" sdnum="1033;">48</td>
+                            <td align="left">Pelamar 48</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Google Ads Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="49" sdnum="1033;">49</td>
+                            <td align="left">Pelamar 49</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Data Analyst</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="50" sdnum="1033;">50</td>
+                            <td align="left">Pelamar 50</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Web Developer</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="51" sdnum="1033;">51</td>
+                            <td align="left">Pelamar 51</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">SEO Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="52" sdnum="1033;">52</td>
+                            <td align="left">Pelamar 52</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Facebook Ads Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="53" sdnum="1033;">53</td>
+                            <td align="left">Pelamar 53</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Google Ads Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="54" sdnum="1033;">54</td>
+                            <td align="left">Pelamar 54</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Data Analyst</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="55" sdnum="1033;">55</td>
+                            <td align="left">Pelamar 55</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Web Developer</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="56" sdnum="1033;">56</td>
+                            <td align="left">Pelamar 56</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">SEO Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="57" sdnum="1033;">57</td>
+                            <td align="left">Pelamar 57</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Facebook Ads Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="58" sdnum="1033;">58</td>
+                            <td align="left">Pelamar 58</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Google Ads Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="59" sdnum="1033;">59</td>
+                            <td align="left">Pelamar 59</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Data Analyst</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="60" sdnum="1033;">60</td>
+                            <td align="left">Pelamar 60</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Web Developer</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="61" sdnum="1033;">61</td>
+                            <td align="left">Pelamar 61</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">SEO Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="62" sdnum="1033;">62</td>
+                            <td align="left">Pelamar 62</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Facebook Ads Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="63" sdnum="1033;">63</td>
+                            <td align="left">Pelamar 63</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Google Ads Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="64" sdnum="1033;">64</td>
+                            <td align="left">Pelamar 64</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Data Analyst</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="65" sdnum="1033;">65</td>
+                            <td align="left">Pelamar 65</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Web Developer</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="66" sdnum="1033;">66</td>
+                            <td align="left">Pelamar 66</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">SEO Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="67" sdnum="1033;">67</td>
+                            <td align="left">Pelamar 67</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Facebook Ads Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="68" sdnum="1033;">68</td>
+                            <td align="left">Pelamar 68</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Google Ads Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="69" sdnum="1033;">69</td>
+                            <td align="left">Pelamar 69</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Data Analyst</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="70" sdnum="1033;">70</td>
+                            <td align="left">Pelamar 70</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Web Developer</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="71" sdnum="1033;">71</td>
+                            <td align="left">Pelamar 71</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">SEO Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="72" sdnum="1033;">72</td>
+                            <td align="left">Pelamar 72</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Facebook Ads Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="73" sdnum="1033;">73</td>
+                            <td align="left">Pelamar 73</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Google Ads Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="74" sdnum="1033;">74</td>
+                            <td align="left">Pelamar 74</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Data Analyst</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="75" sdnum="1033;">75</td>
+                            <td align="left">Pelamar 75</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Web Developer</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="76" sdnum="1033;">76</td>
+                            <td align="left">Pelamar 76</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">SEO Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="77" sdnum="1033;">77</td>
+                            <td align="left">Pelamar 77</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Facebook Ads Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="78" sdnum="1033;">78</td>
+                            <td align="left">Pelamar 78</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Google Ads Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="79" sdnum="1033;">79</td>
+                            <td align="left">Pelamar 79</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Data Analyst</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="80" sdnum="1033;">80</td>
+                            <td align="left">Pelamar 80</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Web Developer</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="81" sdnum="1033;">81</td>
+                            <td align="left">Pelamar 81</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">SEO Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="82" sdnum="1033;">82</td>
+                            <td align="left">Pelamar 82</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Facebook Ads Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="83" sdnum="1033;">83</td>
+                            <td align="left">Pelamar 83</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Google Ads Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="84" sdnum="1033;">84</td>
+                            <td align="left">Pelamar 84</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Data Analyst</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="85" sdnum="1033;">85</td>
+                            <td align="left">Pelamar 85</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Web Developer</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="86" sdnum="1033;">86</td>
+                            <td align="left">Pelamar 86</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">SEO Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="87" sdnum="1033;">87</td>
+                            <td align="left">Pelamar 87</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Facebook Ads Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="88" sdnum="1033;">88</td>
+                            <td align="left">Pelamar 88</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Google Ads Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="89" sdnum="1033;">89</td>
+                            <td align="left">Pelamar 89</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Data Analyst</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="90" sdnum="1033;">90</td>
+                            <td align="left">Pelamar 90</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Web Developer</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="91" sdnum="1033;">91</td>
+                            <td align="left">Pelamar 91</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">SEO Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="92" sdnum="1033;">92</td>
+                            <td align="left">Pelamar 92</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Facebook Ads Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="93" sdnum="1033;">93</td>
+                            <td align="left">Pelamar 93</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Google Ads Specialist</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="94" sdnum="1033;">94</td>
+                            <td align="left">Pelamar 94</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Data Analyst</td>
+                            <td align="left">Download</td>
+                        </tr>
+                        <tr>
+                            <td height="17" align="right" sdval="95" sdnum="1033;">95</td>
+                            <td align="left">Pelamar 95</td>
+                            <td align="right" sdval="628123456789" sdnum="1033;">628123456789</td>
+                            <td align="left">nama@domain.com</td>
+                            <td align="left">Web Developer</td>
+                            <td align="left">Download</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+</body>
+</html>
